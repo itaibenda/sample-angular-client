@@ -19,7 +19,7 @@ describe('Controller: MainController', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the controller', function () {
-    expect(1).toBe(1);
-  });
+//  it('should attach a list of awesomeThings to the controller', function () {
+//    expect(1).toBe(1);
+//  });
 });

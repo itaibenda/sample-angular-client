@@ -15,7 +15,7 @@
         .error(function () {
           $window.alert('oops!');
         });
-    };
+    }
 
     this.get = function () {
       return _posts;
