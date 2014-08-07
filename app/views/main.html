@@ -1,0 +1,19 @@
+<div id="post-container" ng-controller="PostsController as postsCtrl">
+    <form class="new-post" ng-submit="postsCtrl.saveNewPost()">
+        <h3>Add a new post:</h3>
+        <div class="new-title">
+            <label for="new-post-title">Title</label>
+            <input id="new-post-title" ng-model="postsCtrl.newTitle"/>
+        </div>
+        <div class="new-body">
+            <label for="new-post-body">Body</label>
+            <textarea id="new-post-body" ng-model="postsCtrl.newBody"/>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <h3>Previous Posts:</h3>
+    <div class="post" ng-repeat="post in postsCtrl.posts track by post.id">
+        <div class="title">{{post.title}}</div>
+        <div class="body">{{post.body}}</div>
+    </div>
+</div>
