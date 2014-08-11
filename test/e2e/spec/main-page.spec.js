@@ -4,7 +4,7 @@ require('../lib/matchers.protractor.js');
 var MainPage = require('../pages/main-page.js');
 
 describe('sampleAngularClientApp Main Page', function () {
-  var mainPage, serverMode;
+  var mainPage;
 
   beforeEach(function () {
     mainPage = new MainPage();
@@ -34,10 +34,10 @@ describe('sampleAngularClientApp Main Page', function () {
       mainPage.navigate();
 
       /* wait for the alert to open */
-      browser.wait(function() {
+      browser.wait(function () {
         return browser.switchTo().alert().then(
-          function() { return true; },
-          function() { return false; }
+          function () { return true; },
+          function () { return false; }
         );
       });
 

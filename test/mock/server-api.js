@@ -3,7 +3,7 @@
 angular.module('sampleAngularClientAppMocks', ['ngMockE2E'])
   .run(function ($httpBackend, serverMode) {
     var mockPosts = [];
-    for (var i = 0; i < 100 ; i ++) {
+    for (var i = 0; i < 100 ; i++) {
       mockPosts.push({ title: 'one', body: 'two', id: i });
     }
 
