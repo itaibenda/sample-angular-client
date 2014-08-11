@@ -5,8 +5,12 @@ function MainPage() {
     browser.get('/');
   };
 
-  this.getTitle = function () {
-    return $('h3');
+  this.getNewPostPanel = function () {
+    return $('.new-post');
+  };
+
+  this.getPosts = function () {
+    return $$('.post');
   };
 }
 

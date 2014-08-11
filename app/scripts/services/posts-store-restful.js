@@ -11,8 +11,9 @@
     function query() {
       _posts = _postsResource.query();
 
-      _posts.$promise.then(function () {}, function () {
+      _posts.$promise.then(angular.noop, function () {
         $window.alert('boohoo :(');
+        //_posts = [{title: 'crap', body: 'shit', id: 0}];
       });
     }
 
